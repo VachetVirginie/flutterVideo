@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 import 'video_list.dart';
+import 'card.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
@@ -121,6 +122,15 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         actions: [
           IconButton(
+            icon: Icon(Icons.info),
+            onPressed: () => Navigator.push(
+              context,
+              CupertinoPageRoute(
+                builder: (context) => MyCard(),
+              ),
+            ),
+          ),
+            IconButton(
             icon: Icon(Icons.video_library),
             onPressed: () => Navigator.push(
               context,
