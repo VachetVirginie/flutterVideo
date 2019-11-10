@@ -42,7 +42,7 @@ class MyCard extends StatelessWidget {
             Icons.star,
             color: Colors.red[500],
           ),
-          Text('41'),
+          Text('1000'),
         ],
       ),
     );
